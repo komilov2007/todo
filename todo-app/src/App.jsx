@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import Oka from './assets/oka.png';
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -58,6 +59,7 @@ function App() {
 
       {todos.length === 0 ? (
         <div className="empty">
+          <img src="oka" alt="empty" />
           <p>to do list yoq...</p>
         </div>
       ) : (
